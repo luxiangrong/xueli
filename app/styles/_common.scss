@@ -1,0 +1,37 @@
+// 统一字体单位为rem，并根据不同屏幕宽度放大字体
+html {
+    font-size: 9px
+}
+
+@media screen and (min-width:320px) and (max-width:374px) {
+    html {
+        font-size: 10px
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:413px) {
+    html {
+        font-size: 12px
+    }
+}
+
+@media screen and (min-width:414px) and (max-width:639px) {
+    html {
+        font-size: 15px
+    }
+}
+
+@media screen and (min-width:640px){
+    html {
+        font-size: 18px
+    }
+}
+
+//让页面最大宽度固定在414px
+@media (min-width: 640px) {
+    .container-fluid {
+        max-width: 640px;
+        margin: 0 auto;
+        position: relative;
+    }
+}

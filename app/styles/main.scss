@@ -1,0 +1,15 @@
+// 变量定义
+@import "variable";
+
+// 自定义字体，图标字体
+@import "iconfont";
+
+// 自定义引入bootstrap框架
+@import "custom-bootstrap";
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+//公共模块
+@import "common";

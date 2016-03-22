@@ -9,11 +9,18 @@
 // endbower
 //公共模块
 @import "common";
+@import "dropdown";
 //首页
+.scroll {
+    height: 100%;
+    overflow-y: auto;
+}
+
 .page-home {
     .activity-date {
         background: #FEE3E4 url(../images/p02.png) no-repeat center center;
         text-align: center;
+        margin-top: 10px;
         h5 {
             background-color: #FEE3E4;
             display: inline-block;
@@ -48,23 +55,70 @@
         }
     }
     #search_bar {
-        margin-top: 10px;
         background-color: #FEE3E4;
     }
+}
+
+.weui_search_bar {
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 .participants {
     margin-top: 20px;
     .participant {
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 3px;
+        padding-right: 3px;
         overflow: hidden;
+        position: relative;
         .thumbnail {
-            min-height: calc(33.3333vw - 13.333px);
-            max-height: calc(33.3333vw - 13.333px);
+            min-height: calc(33.3333vw - 10px);
+            max-height: calc(33.3333vw - 10px);
+            margin-bottom: 5px;
+            position: relative;
+            line-height: calc(33.3333vw - 10px);
+            .name {
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                line-height: 20px;
+                background-color: rgba(223, 26, 35, 0.7);
+                color: #fff;
+                text-align: center;
+                border-radius: 0 0 3px 3px;
+            }
+        }
+        .info {
+            position: relative;
+            width: 100%;
+            line-height: 20px;
+            height: 20px;
+            color: rgba(223, 26, 35, 1);
+            font-weight: normal;
             margin-bottom: 10px;
+            .no {
+                position: absolute;
+                left: 0px;
+                right: 0px;
+                top: 0px;
+                right: 0px;
+                text-align: left;
+            }
+            .count {
+                position: absolute;
+                left: 0px;
+                right: 0px;
+                top: 0px;
+                right: 0px;
+                text-align: right;
+            }
         }
     }
+}
+
+.scroll-pane {
+    padding-bottom: 50px;
 }
 
 .weui_tabbar {
@@ -91,5 +145,125 @@
                 color: #DF1A23
             }
         }
+    }
+}
+
+//参赛投票页
+.page-vote {
+    background-color: #FEE3E4;
+    .participant {
+        margin-top: 15px;
+        img {
+            box-shadow: 2px 2px 5px 2px rgba(100, 100, 100, 0.2), 2px -2px 5px 2px rgba(100, 100, 100, 0.2), -2px 2px 5px 2px rgba(100, 100, 100, 0.2), -2px -2px 5px 2px rgba(100, 100, 100, 0.2);
+        }
+        .no,
+        .name,
+        .count {
+            margin: 10px 0;
+            color: #c91218;
+        }
+        .btn-vote-wrapper {
+            .iconfont {
+                margin: 0 5px;
+            }
+        }
+    }
+    .hr {
+        margin: 20px 0;
+    }
+    h4 {
+        color: #666;
+        text-align: center;
+        font-size: 18px;
+    }
+    .box {
+        padding: 20px;
+        border: 2px solid rgb(249, 110, 87);
+        border-radius: 8px;
+        position: relative;
+        margin-top: 15px;
+        .box-top {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            right: 0;
+        }
+        .box-bottom {
+            position: absolute;
+            bottom: 18px;
+            left: 0;
+            right: 0;
+        }
+        .dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: rgb(249, 110, 87);
+            &.left {
+                position: absolute;
+                left: 10px;
+            }
+            &.right {
+                position: absolute;
+                right: 10px;
+            }
+        }
+        .box-center {
+            p {
+                margin: 10px 0 5px;
+                color: #666;
+            }
+        }
+        h5 {
+            color: rgb(249, 110, 87);
+            font-size: 1.6rem;
+        }
+    }
+    .tag-box {
+        margin-top: 20px;
+        .tag {
+            background-color: rgb(249, 110, 87);
+            width: 100px;
+            height: 50px;
+            border-radius: 60px 60px 0 0;
+            text-align: center;
+            font-size: 1.6rem;
+            color: #fff;
+            line-height: 60px;
+        }
+        .body {
+            border: 8px solid rgb(249, 110, 87);
+            background-color: #fff;
+            padding: 8px;
+            dl {
+                margin-bottom: 0;
+                dt {
+                    float: left;
+                    width: 5em;
+                    text-align: right;
+                    padding-right: 5px;
+                    font-weight: normal;
+                }
+                dd {
+                    padding-left: 5em;
+                    color: rgb(249, 110, 87);
+                }
+            }
+            .text-orange {
+                color:rgb(249, 110, 87);
+            }
+        }
+    }
+}
+
+.avaiable-hearts {
+    position: fixed;
+    top: 5px;
+    right: 15px;
+    text-align: right;
+    z-index: 1;
+    .iconfont {
+        color: #DF1A23;
     }
 }

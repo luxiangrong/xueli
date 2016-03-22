@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>xueli</title>
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
@@ -21,102 +21,183 @@
 <body class="page-home">
     <div class="weui_tab">
         <div class="weui_tab_bd">
-            <div class="container-fluid">
-                <div class="row brand">
-                    <img src="images/j01.jpg" class="img-responsive center-block" alt="">
-                </div>
-                <div class="row statistics">
-                    <div class="col-xs-4">
-                        <div class="item">
-                            <label for="">参与数</label>
-                            <div class="num">100</div>
-                        </div>
+            <div class="scroll-pane">
+                <div class="container-fluid">
+                    <div class="row brand">
+                        <img src="images/j01.jpg" class="img-responsive center-block" alt="">
                     </div>
-                    <div class="col-xs-4 ">
-                        <div class="item">
-                            <label for="">总票数</label>
-                            <div class="num">100</div>
-                        </div>
-                    </div>
-                    <div class="col-xs-4 ">
-                        <div class="item">
-                            <label for="">访问量</label>
-                            <div class="num">100</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="weui_search_bar" id="search_bar">
-                        <form class="weui_search_outer">
-                            <div class="weui_search_inner">
-                                <i class="weui_icon_search"></i>
-                                <input type="search" class="weui_search_input" id="search_input" placeholder="搜索" required/>
-                                <a href="javascript:" class="weui_icon_clear" id="search_clear"></a>
+                    <div class="row statistics">
+                        <div class="col-xs-4">
+                            <div class="item">
+                                <label for="">参与数</label>
+                                <div class="num">100</div>
                             </div>
-                            <label for="search_input" class="weui_search_text" id="search_text">
-                                <i class="weui_icon_search"></i>
-                                <span>搜索</span>
-                            </label>
-                        </form>
-                        <a href="javascript:" class="weui_search_cancel" id="search_cancel">取消</a>
+                        </div>
+                        <div class="col-xs-4 ">
+                            <div class="item">
+                                <label for="">总票数</label>
+                                <div class="num">100</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 ">
+                            <div class="item">
+                                <label for="">访问量</label>
+                                <div class="num">100</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="activity-date">
+                            <h5>活动时间: 2016年3月1日--2016年4月30</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="weui_search_bar" id="search_bar">
+                                <form class="weui_search_outer">
+                                    <div class="weui_search_inner">
+                                        <i class="weui_icon_search"></i>
+                                        <input type="search" class="weui_search_input" id="search_input" placeholder="搜索" required/>
+                                        <a href="javascript:" class="weui_icon_clear" id="search_clear"></a>
+                                    </div>
+                                    <label for="search_input" class="weui_search_text" id="search_text">
+                                        <i class="weui_icon_search"></i>
+                                        <span>搜索</span>
+                                    </label>
+                                </form>
+                                <a href="javascript:" class="weui_search_cancel" id="search_cancel">取消</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="activity-date">
-                        <h5>活动时间: 2016年3月1日--2016年4月30</h5>
+                <div class="container-fluid participants">
+                    <div class="row">
+                        <div class="col-xs-4 participant">
+                            <a href="vote.html" class="thumbnail">
+                                <img src="images/j03.jpg" alt="...">
+                                <div class="name">超人</div>
+                            </a>
+                            <div class="info">
+                                <div class="no">1111号</div>
+                                <div class="count">12354票</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 participant">
+                            <a href="vote.html" class="thumbnail">
+                                <img src="images/j02.jpg" alt="...">
+                                <div class="name">超人</div>
+                            </a>
+                            <div class="info">
+                                <div class="no">1111号</div>
+                                <div class="count">12354票</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 participant">
+                            <a href="vote.html" class="thumbnail">
+                                <img src="images/j02.jpg" alt="...">
+                                <div class="name">超人</div>
+                            </a>
+                            <div class="info">
+                                <div class="no">1111号</div>
+                                <div class="count">12354票</div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="container-fluid participants">
-                <div class="row">
-                    <div class="col-xs-4 participant">
-                        <a href="#" class="thumbnail">
-                            <img src="images/j03.jpg" alt="...">
-                        </a>
+                    <div class="row">
+                        <div class="col-xs-4 participant">
+                            <a href="vote.html" class="thumbnail">
+                                <img src="images/j03.jpg" alt="...">
+                                <div class="name">超人</div>
+                            </a>
+                            <div class="info">
+                                <div class="no">1111号</div>
+                                <div class="count">12354票</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 participant">
+                            <a href="vote.html" class="thumbnail">
+                                <img src="images/j02.jpg" alt="...">
+                                <div class="name">超人</div>
+                            </a>
+                            <div class="info">
+                                <div class="no">1111号</div>
+                                <div class="count">12354票</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 participant">
+                            <a href="vote.html" class="thumbnail">
+                                <img src="images/j02.jpg" alt="...">
+                                <div class="name">超人</div>
+                            </a>
+                            <div class="info">
+                                <div class="no">1111号</div>
+                                <div class="count">12354票</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-xs-4 participant">
-                        <a href="#" class="thumbnail">
-                            <img src="images/j02.jpg" alt="...">
-                        </a>
+                    <div class="row">
+                        <div class="col-xs-4 participant">
+                            <a href="vote.html" class="thumbnail">
+                                <img src="images/j03.jpg" alt="...">
+                                <div class="name">超人</div>
+                            </a>
+                            <div class="info">
+                                <div class="no">1111号</div>
+                                <div class="count">12354票</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 participant">
+                            <a href="vote.html" class="thumbnail">
+                                <img src="images/j02.jpg" alt="...">
+                                <div class="name">超人</div>
+                            </a>
+                            <div class="info">
+                                <div class="no">1111号</div>
+                                <div class="count">12354票</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 participant">
+                            <a href="vote.html" class="thumbnail">
+                                <img src="images/j02.jpg" alt="...">
+                                <div class="name">超人</div>
+                            </a>
+                            <div class="info">
+                                <div class="no">1111号</div>
+                                <div class="count">12354票</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-xs-4 participant">
-                        <a href="#" class="thumbnail">
-                            <img src="images/j04.jpg" alt="...">
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 participant">
-                        <a href="#" class="thumbnail">
-                            <img src="images/j01.jpg" alt="...">
-                        </a>
-                    </div>
-                    <div class="col-xs-4 participant">
-                        <a href="#" class="thumbnail">
-                            <img src="images/j02.jpg" alt="...">
-                        </a>
-                    </div>
-                    <div class="col-xs-4 participant">
-                        <a href="#" class="thumbnail">
-                            <img src="images/j02.jpg" alt="...">
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 participant">
-                        <a href="#" class="thumbnail">
-                            <img src="images/j01.jpg" alt="...">
-                        </a>
-                    </div>
-                    <div class="col-xs-4 participant">
-                        <a href="#" class="thumbnail">
-                            <img src="images/j02.jpg" alt="...">
-                        </a>
-                    </div>
-                    <div class="col-xs-4 participant">
-                        <a href="#" class="thumbnail">
-                            <img src="images/j02.jpg" alt="...">
-                        </a>
+                    <div class="row">
+                        <div class="col-xs-4 participant">
+                            <a href="vote.html" class="thumbnail">
+                                <img src="images/j03.jpg" alt="...">
+                                <div class="name">超人</div>
+                            </a>
+                            <div class="info">
+                                <div class="no">1111号</div>
+                                <div class="count">12354票</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 participant">
+                            <a href="vote.html" class="thumbnail">
+                                <img src="images/j02.jpg" alt="...">
+                                <div class="name">超人</div>
+                            </a>
+                            <div class="info">
+                                <div class="no">1111号</div>
+                                <div class="count">12354票</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 participant">
+                            <a href="vote.html" class="thumbnail">
+                                <img src="images/j02.jpg" alt="...">
+                                <div class="name">超人</div>
+                            </a>
+                            <div class="info">
+                                <div class="no">1111号</div>
+                                <div class="count">12354票</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -159,6 +240,9 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/dropload/dist/dropload.min.js"></script>
+    <script src="/bower_components/velocity/velocity.js"></script>
+    <script src="/bower_components/velocity/velocity.ui.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js scripts/plugins.js -->
@@ -166,6 +250,51 @@
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
+    <script>
+    jQuery(function($) {
+
+
+        var dropload = $('.weui_tab_bd').dropload({
+            threshold: 200,
+            loadDownFn: function(me) {
+                $.get('data.html')
+                    .done(function(data) {
+                        setTimeout(function() {
+                            $('.participants').append(data);
+                            // 每次数据加载完，必须重置
+                            dropload.resetload();
+                        }, 500);
+                    })
+                    .fail(function(data) {
+                        dropload.resetload();
+                    });
+            }
+        });
+        $('#search_input').on('focus', function() {
+            $('#search_bar').addClass('weui_search_focusing');
+        });
+        $('#search_input').on('blur', function() {
+            $('#search_bar').removeClass('weui_search_focusing');
+        });
+        var oldValue = '';
+        $('#search_input').on('keydown', function() {
+            if (oldValue != $(this).val()) {
+                $.get('result.html')
+                    .done(function(data) {
+                        setTimeout(function() {
+                            $('.participants').html(data);
+                            // 每次数据加载完，必须重置
+                            dropload.resetload();
+                        }, 500);
+                    })
+                    .fail(function(data) {
+                        dropload.resetload();
+                    });
+            }
+            oldValue = $(this).val();
+        });
+    });
+    </script>
 </body>
 
 </html>

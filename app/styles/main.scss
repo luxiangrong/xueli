@@ -1,15 +1,95 @@
 // 变量定义
 @import "variable";
-
 // 自定义字体，图标字体
 @import "iconfont";
-
 // 自定义引入bootstrap框架
 @import "custom-bootstrap";
-
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
-
 //公共模块
 @import "common";
+//首页
+.page-home {
+    .activity-date {
+        background: #FEE3E4 url(../images/p02.png) no-repeat center center;
+        text-align: center;
+        h5 {
+            background-color: #FEE3E4;
+            display: inline-block;
+            color: #DF1A23;
+            text-align: center;
+            font-size: 16px;
+            line-height: 30px;
+            margin-top: 10px;
+            font-weight: normal;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+    .statistics {
+        margin-top: 20px;
+        .col-xs-4 {
+            padding: 0 5px;
+        }
+        .item {
+            height: 50px;
+            text-align: center;
+            background: url(../images/p01.png) no-repeat center top;
+            background-size: 100% 100%;
+            color: #fff;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-size: 16px;
+            label {
+                margin-bottom: 0;
+                font-weight: normal;
+            }
+        }
+    }
+    #search_bar {
+        margin-top: 10px;
+        background-color: #FEE3E4;
+    }
+}
+
+.participants {
+    margin-top: 20px;
+    .participant {
+        padding-left: 5px;
+        padding-right: 5px;
+        overflow: hidden;
+        .thumbnail {
+            min-height: calc(33.3333vw - 13.333px);
+            max-height: calc(33.3333vw - 13.333px);
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.weui_tabbar {
+    .weui_tabbar_item {
+        padding-top: 0px;
+        .weui_tabbar_icon {
+            height: auto;
+            width: auto;
+            text-align: center;
+            .iconfont {
+                font-size: 28px;
+                color: #666;
+            }
+        }
+        .weui_tabbar_label {
+            margin-top: 0px;
+            margin-bottom: 5px;
+        }
+        &.weui_bar_item_on {
+            .iconfont {
+                color: #DF1A23;
+            }
+            .weui_tabbar_label {
+                color: #DF1A23
+            }
+        }
+    }
+}

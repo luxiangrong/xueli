@@ -18,12 +18,7 @@
     <!-- endbuild -->
 </head>
 
-<body class="page-vote">
-    <div class="avaiable-hearts">
-        <i class="iconfont">&#xe601;</i>
-        <i class="iconfont">&#xe601;</i>
-        <i class="iconfont">&#xe601;</i>
-    </div>
+<body class="page-note">
     <div class="weui_tab">
         <div class="weui_tab_bd">
             <div class="scroll-pane">
@@ -31,21 +26,6 @@
                     <div class="row brand">
                         <img src="images/j01.jpg" class="img-responsive center-block" alt="">
                     </div>
-                    <div class="row participant">
-                        <div class="col-xs-12">
-                            <img class="img-responsive" src="images/j04.jpg" alt="">
-                        </div>
-                        <div class="no col-xs-4 text-center">56号</div>
-                        <div class="name col-xs-4 text-center">花仙子</div>
-                        <div class="count col-xs-4 text-center"><span id="vote-count">1234</span>票</div>
-                        <div class="btn-vote-wrapper col-xs-6 text-left">
-                            <a href="" class="btn btn-block btn-vote btn-danger"><i class="iconfont">&#xe601;</i>投我一票</a>
-                        </div>
-                        <div class="btn-vote-wrapper col-xs-6 text-right">
-                            <a href="" class="btn btn-block btn-danger">帮我拉票<i class="iconfont">&#xe601;</i></a>
-                        </div>
-                    </div>
-                    <img src="images/p03.png" alt="" class="hr img-responsive">
                     <h4>活动说明</h4>
                     <div class="box">
                         <div class="box-top">
@@ -158,7 +138,7 @@
             </div>
         </div>
         <div class="weui_tabbar">
-            <a href="index.html" class="weui_tabbar_item weui_bar_item_on">
+            <a href="index.html" class="weui_tabbar_item ">
                 <div class="weui_tabbar_icon">
                     <i class="iconfont">&#xe603;</i>
                 </div>
@@ -176,7 +156,7 @@
                 </div>
                 <p class="weui_tabbar_label">马上参赛</p>
             </a>
-            <a href="javascript:;" class="weui_tabbar_item">
+            <a href="javascript:;" class="weui_tabbar_item weui_bar_item_on">
                 <div class="weui_tabbar_icon">
                     <i class="iconfont">&#xe604;</i>
                 </div>
@@ -207,38 +187,7 @@
     <!-- endbuild -->
     <script>
     jQuery(function($) {
-        $('.btn-vote').on('click', function(e) {
-            e.preventDefault();
-            var heart = $('.avaiable-hearts .iconfont').first();
-            var heartClone = heart.clone();
-            $('.weui_tab_bd').append(heartClone);
-            
-            heartClone.css({
-                'position': 'absolute',
-                'color': '#DF1A23',
-                'top': '5px',
-                'right': 15 +( $('.avaiable-hearts .iconfont').length - 1) * 18 + 'px'
-            });
-
-            heart.remove();
-
-            var voteCountPos = $('#vote-count').parent().position();
-
-            heartClone.velocity({
-                top: voteCountPos.top,
-                right: '50px',
-                scaleX: 2,
-                scaleY: 2
-            }, {
-                'easing': 'easeInOutBack',
-                'duration': 1000,
-                'complete': function(){
-                    var count = parseInt($('#vote-count').text());
-                    $('#vote-count').text(count + 1);
-                    heartClone.remove();
-                }
-            });
-        });
+        
     });
     </script>
 </body>

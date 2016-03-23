@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>xueli</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/weui/dist/style/weui.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+
+<body class="page-enter">
+    <div class="weui_tab">
+        <div class="weui_tab_bd">
+            <div class="scroll-pane">
+                <div class="container-fluid ranking-list">
+                    <div class="row brand">
+                        <img src="images/j01.jpg" class="img-responsive center-block" alt="">
+                    </div>
+                    <div class="row">
+                        <div class="activity-date">
+                            <h5>活动时间: 2016年3月1日--2016年4月30</h5>
+                        </div>
+                    </div>
+                    <div class="weui_cells_form">
+                        <div class="weui_cell">
+                            <div class="weui_cell_hd">
+                                <label class="weui_label">姓名</label>
+                            </div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <input class="weui_input" type="number" placeholder="请输入真实姓名">
+                            </div>
+                        </div>
+                        <div class="weui_cell">
+                            <div class="weui_cell_hd">
+                                <label class="weui_label">手机</label>
+                            </div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <input class="weui_input" type="number" placeholder="请输入手机号">
+                            </div>
+                            <div class="weui_cell_ft">
+                                <button href="javascript:;" id="btn-verify" class="btn btn-danger btn-sm">获取验证码</button>
+                            </div>
+                        </div>
+                        <div class="weui_cell">
+                            <div class="weui_cell_hd">
+                                <label class="weui_label">验证码</label>
+                            </div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <input class="weui_input" type="number" placeholder="输入收到的手机验证码">
+                            </div>
+                        </div>
+                        <div class="weui_cell">
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <div class="weui_uploader">
+                                    <div class="weui_uploader_hd weui_cell">
+                                        <div class="weui_cell_bd weui_cell_primary">上传照片</div>
+                                    </div>
+                                    <div class="weui_uploader_bd">
+                                        <ul class="weui_uploader_files">
+                                            <li class="weui_uploader_file" style="background-image:url(http://shp.qpic.cn/weixinsrc_pic/pScBR7sbqjOBJomcuvVJ6iacVrbMJaoJZkFUIq4nzQZUIqzTKziam7ibg/)"></li>
+                                        </ul>
+                                        <div class="weui_uploader_input_wrp">
+                                            <input class="weui_uploader_input" type="file" accept="image/jpg,image/jpeg,image/png,image/gif" multiple="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="weui_btn_area">
+                            <button class="btn btn-block btn-danger" href="javascript:" id="showTooltips">报名</button>
+                        </div>
+                    </div>
+                    <div class="tag-box">
+                        <div class="tag">
+                            报名须知
+                        </div>
+                        <div class="body">
+                            <img src="images/j05.jpg" alt="" class="img-responsive center-block">
+                            <p class="text-orange">1：请使用真实姓名</p>
+                            <p class="text-orange">2：请上传您本人或者您同桌的真实照片，否则将取消参赛资格</p>
+                            <p class="text-orange">3：每人只限报名一次</p>
+                            <p class="text-orange">4：图片只能上传一次且不能修改</p>
+                            <p class="text-orange">5：图片大小3MB以内</p>
+                            <p class="text-orange">6：如报名遇到问题请联系技术电话：18515156672</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="weui_tabbar">
+            <a href="index.html" class="weui_tabbar_item ">
+                <div class="weui_tabbar_icon">
+                    <i class="iconfont">&#xe603;</i>
+                </div>
+                <p class="weui_tabbar_label">首页</p>
+            </a>
+            <a href="ranking.html" class="weui_tabbar_item ">
+                <div class="weui_tabbar_icon">
+                    <i class="iconfont">&#xe605;</i>
+                </div>
+                <p class="weui_tabbar_label">排行</p>
+            </a>
+            <a href="enter.html" class="weui_tabbar_item weui_bar_item_on">
+                <div class="weui_tabbar_icon">
+                    <i class="iconfont">&#xe600;</i>
+                </div>
+                <p class="weui_tabbar_label ">马上参赛</p>
+            </a>
+            <a href="note.html" class="weui_tabbar_item ">
+                <div class="weui_tabbar_icon">
+                    <i class="iconfont">&#xe604;</i>
+                </div>
+                <p class="weui_tabbar_label">须知</p>
+            </a>
+            <a href="award.html" class="weui_tabbar_item ">
+                <div class="weui_tabbar_icon">
+                    <i class="iconfont">&#xe602;</i>
+                </div>
+                <p class="weui_tabbar_label">奖品</p>
+            </a>
+        </div>
+    </div>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script></script>
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/dropload/dist/dropload.min.js"></script>
+    <script src="/bower_components/velocity/velocity.js"></script>
+    <script src="/bower_components/velocity/velocity.ui.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js scripts/plugins.js -->
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+    <script>
+    jQuery(function($) {
+    	$('#btn-verify').on('click', function(e){
+    		e.preventDefault();
+    		var $this = $(this);
+    		var seconds = 60;
+    		$this.prop('disabled', true);
+    		$(this).text(seconds + '秒后重新发送！');
+    		var handler = window.setInterval(function(){
+    			if(seconds == 1) {
+    				$this.prop('disabled', false);
+    				$this.text('获取验证码');
+    				clearInterval(handler);
+    				return;
+    			} else {
+    				$this.text(--seconds + '秒后重新发送！');
+    			}
+    		}, 1000);
+    	});
+    });
+    </script>
+</body>
+
+</html>

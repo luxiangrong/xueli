@@ -1,90 +1,170 @@
+<!doctype html>
+<html lang="">
 
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1;"/>
-		<title>Step 3 - Optimizing overflow:scroll on iOS5</title>
-		<style>
-			* {margin: 0; padding: 0;}
-			
-			html {
-				height: 100%;
-			}
-			body {
-				background-color: lightgrey;
-				height: 100%;
-			}
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>xueli</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/weui/dist/style/weui.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <!-- endbuild -->
+</head>
 
-			.scollpane {
-				position:absolute;
-				top:30px;
-				left:30px;
-				background-color: white;
-				width:260px;
-				height:100%;
-				border: 1px solid black;
-				overflow-y: auto;
-				-webkit-overflow-scrolling: touch;
-			}
+<body class="page-ranking">
+    <div class="container js_container">
 
-			.scollpane ul {
-				height:100%;
-				overflow-y: auto;
-			}
-			
-			li {
-				font-family: sans-serif;
-				font-size: 12px;
-				border-bottom: 1px solid #e7e7e7;
-				padding: 0.6em 0.3em;
-			}
-		</style>
-		<script type="text/javascript">
-			document.addEventListener("DOMContentLoaded", ready, false);
-			document.addEventListener("touchmove", function(evt){
-				evt.preventDefault();
-			}, false);
-			
-			function ready(){
-				var container = document.getElementsByClassName("scollpane")[0];
-				container.addEventListener("touchmove", function(evt){
-					evt.stopPropagation();
-				}, false);
-			}
-		</script>
-	</head>
-	<body>
-		<div class="scollpane">
-			<ul>
-				<li>Element 1</li>
-				<li>Element 2</li>
-				<li>Element 3</li>
-				<li>Element 4</li>
-				<li>Element 5</li>
-				<li>Element 6</li>
-				<li>Element 7</li>
-				<li>Element 8</li>
-				<li>Element 9</li>
-				<li>Element 10</li>
-				<li>Element 11</li>
-				<li>Element 12</li>
-				<li>Element 13</li>
-				<li>Element 14</li>
-				<li>Element 15</li>
-				<li>Element 16</li>
-				<li>Element 17</li>
-				<li>Element 18</li>
-				<li>Element 19</li>
-				<li>Element 21</li>
-				<li>Element 22</li>
-				<li>Element 23</li>
-				<li>Element 24</li>
-				<li>Element 25</li>
-				<li>Element 26</li>
-				<li>Element 27</li>
-				<li>Element 28</li>
-			</ul>
-		</div>
-	</body>
+    <div class="page slideIn home">
+    <div class="hd">
+        <h1 class="page_title">WeUI</h1>
+        <p class="page_desc">为微信Web服务量身设计</p>
+    </div>
+    <div class="bd">
+        <div class="weui_grids">
+            <a href="javascript:;" class="weui_grid js_grid" data-id="button">
+                <div class="weui_grid_icon">
+                    <img src="./images/icon_nav_button.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                    Button
+                </p>
+            </a>
+            <a href="javascript:;" class="weui_grid js_grid" data-id="cell">
+                <div class="weui_grid_icon">
+                    <img src="./images/icon_nav_cell.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                    Cell
+                </p>
+            </a>
+            <a href="javascript:;" class="weui_grid js_grid" data-id="toast">
+                <div class="weui_grid_icon">
+                    <img src="./images/icon_nav_toast.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                    Toast
+                </p>
+            </a>
+            <a href="javascript:;" class="weui_grid js_grid" data-id="dialog">
+                <div class="weui_grid_icon">
+                    <img src="./images/icon_nav_dialog.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                    Dialog
+                </p>
+            </a>
+            <a href="javascript:;" class="weui_grid js_grid" data-id="progress">
+                <div class="weui_grid_icon">
+                    <img src="./images/icon_nav_progress.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                    Progress
+                </p>
+            </a>
+            <a href="javascript:;" class="weui_grid js_grid" data-id="msg">
+                <div class="weui_grid_icon">
+                    <img src="./images/icon_nav_msg.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                    Msg
+                </p>
+            </a>
+            <a href="javascript:;" class="weui_grid js_grid" data-id="article">
+                <div class="weui_grid_icon">
+                    <img src="./images/icon_nav_article.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                    Article
+                </p>
+            </a>
+            <a href="javascript:;" class="weui_grid js_grid" data-id="actionsheet">
+                <div class="weui_grid_icon">
+                    <img src="./images/icon_nav_actionSheet.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                    ActionSheet
+                </p>
+            </a>
+            <a href="javascript:;" class="weui_grid js_grid" data-id="icons">
+                <div class="weui_grid_icon">
+                    <img src="./images/icon_nav_icons.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                    Icons
+                </p>
+            </a>
+            <a href="javascript:;" class="weui_grid js_grid" data-id="panel">
+                <div class="weui_grid_icon">
+                    <img src="./images/icon_nav_panel.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                    Panel
+                </p>
+            </a>
+            <a href="javascript:;" class="weui_grid js_grid" data-id="tab">
+                <div class="weui_grid_icon">
+                    <img src="./images/icon_nav_tab.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                    Tab
+                </p>
+            </a>
+            <a href="javascript:;" class="weui_grid js_grid" data-id="searchbar">
+                <div class="weui_grid_icon">
+                    <img src="./images/icon_nav_search_bar.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                    SearchBar
+                </p>
+            </a>
+        </div>
+    </div>
+</div><div class="page slideIn button">
+    <div class="hd">
+        <h1 class="page_title">Button</h1>
+    </div>
+    <div class="bd spacing">
+        <a href="javascript:;" class="weui_btn weui_btn_primary">按钮</a>
+        <a href="javascript:;" class="weui_btn weui_btn_disabled weui_btn_primary">按钮</a>
+        <a href="javascript:;" class="weui_btn weui_btn_warn">确认</a>
+        <a href="javascript:;" class="weui_btn weui_btn_disabled weui_btn_warn">确认</a>
+        <a href="javascript:;" class="weui_btn weui_btn_default">按钮</a>
+        <a href="javascript:;" class="weui_btn weui_btn_disabled weui_btn_default">按钮</a>
+        <div class="button_sp_area">
+            <a href="javascript:;" class="weui_btn weui_btn_plain_default">按钮</a>
+            <a href="javascript:;" class="weui_btn weui_btn_plain_primary">按钮</a>
+
+            <a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_primary">按钮</a>
+            <a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_default">按钮</a>
+        </div>
+    </div>
+</div></div>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script></script>
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/dropload/dist/dropload.min.js"></script>
+    <script src="/bower_components/velocity/velocity.js"></script>
+    <script src="/bower_components/velocity/velocity.ui.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js scripts/plugins.js -->
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+    <script>
+    jQuery(function($) {
+
+    });
+    </script>
+</body>
+
 </html>
